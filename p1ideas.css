@@ -8,24 +8,20 @@ body {
 }
 
 h1 {
-font-size: 5em;
 padding:0;
 margin: 0;
 color: #bd5540;
 }
 
 h3 {
-font-size: 3em;
 color: #376a51;
 }
 
-p {
-font-size: 2.5em;
+h4 {
 margin-top: 0;
 color: #6d3b31;
 }
 
 h2 {
-  font-size: 4em;
 color: #376a51;
 }
