@@ -1,0 +1,27 @@
+html {font-size: 100%;} /*16px*/
+
+body {
+  background-color: #cee8e4;
+  margin: auto;
+  padding: 100px 100px 100px 100px;
+  line-height: 1.75;
+}
+
+h1 {
+font-size: 5em;
+padding:0;
+margin: 0;
+color: #bd5540;
+}
+
+h2 {
+font-size: 3em;
+color: #376a51;
+}
+
+p {
+font-size: 1.5em;
+margin-top: 0;
+color: #6d3b31;
+}
+
