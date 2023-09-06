@@ -10,20 +10,24 @@ body {
 
 h1 {
   color: #bd5540;
+  font-size: 50px;
   }
   
   h2 {
   color: #376a51;
+  font-size: 40px;
   }
   
 h3 {
   margin-top: 0;
   color: #376a51;
+  font-size: 30px;
 }
 
   h4 {
   margin-top: 0;
   color: #6d3b31;
+  font-size: 20px;
   }
 
 
