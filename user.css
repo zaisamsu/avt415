@@ -3,7 +3,7 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background: hsl(210 30% 24%);
+    background: hsl(152, 30%, 24%);
   }
   
 h1 {
