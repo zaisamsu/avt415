@@ -18,7 +18,7 @@
 body {
   display: grid;
   place-content: center;
-  gap: 4vh;
+  gap: 2vh;
   min-height: 100vh;
   width: min(60ch, 100vw - 2rem);
   margin-right: auto;
@@ -36,7 +36,7 @@ h1 {
 blockquote {
   border-left: 5px solid;
   margin-left: 0;
-  padding: 1rem 0 1rem 2rem;
+  padding: 0rem 0 0rem 2rem;
   font-size: 2rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
