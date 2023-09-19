@@ -1,69 +1,52 @@
-
-
-body {
-  padding: 4rem;
-  background-color: #f2f2f2;
+:root {
+  --color-primary: hsl(310, 100%, 65%);
+  --color-secondary: hsl(160, 100%, 65%);
+  --background: hsl(120, 30%, 15%);
+  --text: hsl(310, 100%, 95%);
 }
 
-
-
-.box--wide {
-  max-width: 50rem;
+::selection {
+  background-color: var(--color-primary);
+  color: var(--background);
+  -webkit-text-fill-color: var(--background);
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
-* + * {
-  margin-top: 2rem;
+body {
+  display: grid;
+  place-content: center;
+  gap: 4vh;
+  min-height: 100vh;
+  width: min(60ch, 100vw - 2rem);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--background);
+  color: var(--text);
 }
 
-
-:root {
-
-  --underline-intrinsic-width: 8;
-  --underline-width: 12;
-  --underline-color: #f1a1e3;
-  --underline-cap-width: 4px;
-  --underline-offset-y: -2px;
-  --underline-padding-x: 0.12em;
-  
- 
-  --cap-image-left: url(https://files-d4s40otz1.now.sh/left.svg);
-  --cap-image-right: url(https://files-4vvqilj8v.now.sh/right.svg);
-}
-  
-.heading {
-  display: inline;
-  --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
-  padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
-  box-decoration-break: clone;
-  background-repeat: no-repeat;
-  color: #1221ff;
-  background-image:
-    linear-gradient(180deg, var(--underline-color), var(--underline-color)),
-    var(--cap-image-left),
-    var(--cap-image-right);
-  background-position-x:
-    calc(var(--underline-cap-width) * var(--underline-width-scale)),
-    0,
-    100%;
-  background-position-y: calc(100% - var(--underline-offset-y) * -1);
-  background-size:
-    calc(100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)) calc(var(--underline-width) * 1px),
-    auto calc(var(--underline-width) * 1px),
-    auto calc(var(--underline-width) * 1px);
+h1 {
+  color: var(--color-primary);
 }
 
+blockquote {
+  border-left: 5px solid;
+  margin-left: 0;
+  padding: 1rem 0 1rem 2rem;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    35deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
 
-.heading--3 {
-  font-size: 3rem;
-  font-weight: bold;
-  --underline-width: 20;
-  --underline-offset-y: -2px;
-  --cap-image-left: url(https://files-6lc03kjqt.now.sh/left-2.svg);
-  --cap-image-right: url(https://files-e7gkh52mq.now.sh/right-2.svg);
+  p {
+    margin: 0;
+  }
 }
-
