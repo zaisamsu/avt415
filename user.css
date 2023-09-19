@@ -2,13 +2,10 @@
 
 body {
   padding: 4rem;
-}
-
-.box {
-  padding: 2rem;
-  max-width: 14rem;
   background-color: #f2f2f2;
 }
+
+
 
 .box--wide {
   max-width: 50rem;
