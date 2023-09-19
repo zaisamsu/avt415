@@ -145,8 +145,33 @@ Name animation
   }
 
 
+  h2 {
+    color: #FDB731;
+  }
+
+
+
+
+  a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
   
-
-
-
-
+  a:visited {
+    color: #FDB731;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #BD0034;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: #4D163D;
+    background-color: transparent;
+    text-decoration: none;
+  }
