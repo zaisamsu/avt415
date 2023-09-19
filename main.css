@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root {
+	--page-height: auto;
+	--page-width: auto;
+	--page-margin: 0;
+	--page-padding: 0;
+	--page-font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+	--page-text-color: #8e9196;
+	--page-text-color-hover: rgba(255,255,255,1.0);
+	--page-background-color: #1a1e23;
+	--tab-display: grid;
+	--tab-background-color: rgba(255, 255, 255, 0.03);
+	--display-none: none;
+	--box-sizing: border-box;
+}
+*:before,
+*:after,
+*,
+::after,
+::before {box-sizing: border-box;}
+html,
+body {
+	display: var(--tab-display);
+	justify-content: center;
+	margin: var(--page-margin);
+	padding: var(--page-padding);
+	font-family: var(--page-font-family);
+	color: var(--page-text-color);
+    
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+	background: #030321;;
+}
+p {padding: 0 1em;}
+p span {color: var(--page-text-color-hover);}
+
+tab-container {
+	display: var(--tab-display);
+	margin-top: 50px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	border: solid rgba(255,255,255,0.03);
+	border-radius: .5em;
+}
+
+input {display: none;}
+input:checked + label {
+	color: var(--page-text-color-hover);
+	background-color: rgba(255,255,255,0.0);
+	transition: all 250ms;
+}
+label {
+	cursor: pointer;
+	transition: color 250ms;
+	padding: 1em;
+	border-right: solid 2px var(--page-background-color);
+	background-color: var(--tab-background-color);
+	text-align: center;
+	transition: all 250ms;
+}
+label:last-of-type {border: none; }
+label:hover {
+	color: var(--page-text-color-hover);
+	background-color: rgba(255,255,255,0.05);
+}
+
+tab-content {
+	display: var(--tab-display);
+	grid-column: 1 / -1;
+}
+
+
+input#tabToggle01:checked ~ tab-content:not(:nth-of-type(1)),
+input#tabToggle02:checked ~ tab-content:not(:nth-of-type(2)),
+input#tabToggle03:checked ~ tab-content:not(:nth-of-type(3)),
+input#tabToggle04:checked ~ tab-content:not(:nth-of-type(4)) {display: none;}
+
+h1 {
+    color: var(--color-primary);
+  }
+
+
+
+
+Name animation
+
+  body{
+    background: #030321;
+    font-family: Arial;
+  }
+
+  .container {
+    display: flex;
+  /*   border:1px solid red; */
+    height: 100%;
+    align-items: center;
+  }
+  
+  svg {
+      display: block;
+      font: 5.5em 'Montserrat';
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+      stroke: #4D163D;
+      animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+      stroke: #840037;
+      animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+      stroke: #BD0034;
+      animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+      stroke: #BD0034;
+      animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+      stroke: #FDB731;
+      animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+  }
+
+
+  
+
+
+
+
