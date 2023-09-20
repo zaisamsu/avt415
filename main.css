@@ -6,11 +6,11 @@
 	--page-margin: 0;
 	--page-padding: 0;
 	--page-font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-	--page-text-color: #8e9196;
+	--page-text-color: #ffa200;
 	--page-text-color-hover: rgba(255,255,255,1.0);
 	--page-background-color: #1a1e23;
 	--tab-display: grid;
-	--tab-background-color: rgba(255, 255, 255, 0.03);
+	--tab-background-color: rgb(75, 0, 0);
 	--display-none: none;
 	--box-sizing: border-box;
 }
@@ -41,7 +41,7 @@ tab-container {
 	margin-top: 50px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto 1fr;
-	border: solid rgba(255,255,255,0.03);
+	border: solid #ffa200;
 	border-radius: .5em;
 }
 
@@ -63,7 +63,7 @@ label {
 label:last-of-type {border: none; }
 label:hover {
 	color: var(--page-text-color-hover);
-	background-color: rgba(255,255,255,0.05);
+	background-color: rgba(255, 172, 39, 0.05);
 }
 
 tab-content {
@@ -146,7 +146,8 @@ Name animation
 
 
 Class name
-  h2 {
+
+h2 {
     color: #FDB731;
   }
 
